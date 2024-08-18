@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+    color: #212529;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 5px solid #ff7e5f;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.25rem;
+    margin: 10px 0 0;
+    font-weight: 300;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 5px solid #feb47b;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 15px;
+    width: 18rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-body {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card-body p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-align: center;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 10px;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: auto;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: scale(1.05);
+}
